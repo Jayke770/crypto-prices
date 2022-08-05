@@ -35,7 +35,7 @@ export default function Index() {
               key={i}
               title={data.name}
               subtitle={data.symbol}
-              text={data.market_data.price_change_percentage_24h > 0 ? <span className="text-green-500">{data.market_data.price_change_percentage_24h}%</span> : <span className="text-red-500">{data.market_data.price_change_percentage_24h}%</span>} />
+              text={data.market_data.price_change_percentage_24h > 0 ? <span className="text-green-500">+{data.market_data.price_change_percentage_24h}%</span> : <span className="text-red-500">{data.market_data.price_change_percentage_24h}%</span>} />
           ))}
         </List>
       ) : (
